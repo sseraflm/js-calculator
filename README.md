@@ -7,7 +7,7 @@ It will be updated in the future with more features.
 
 ## Features
 
-Currently, it supports basic arithmetic operations.
+Currently, it supports basic arithmetic operations and operation history.
 
 ## How does it work?
 
@@ -15,7 +15,7 @@ There are five functions in total.
 Four of them perform the basic operations.
 Then the program gets the first number, the second number, and the operator, and saves them into variables.
 The fifth function determines the right operation based on the saved operator.
-The result is then saved into a variable and added to operation's history by creating an new paragraph and appending it to the history div.
+The result is then saved into a variable and added to operation's history by creating a new paragraph and appending it to the history div.
 
 ## Technologies
 
