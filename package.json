@@ -1,0 +1,24 @@
+{
+  "name": "js-calculator",
+  "version": "1.0.0",
+  "description": "This is my first real project. It will be updated in the future with more features.",
+  "main": "calculator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sseraflm/js-calculator.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sseraflm/js-calculator/issues"
+  },
+  "homepage": "https://github.com/sseraflm/js-calculator#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.10.0",
+    "globals": "^17.12.0"
+  }
+}
