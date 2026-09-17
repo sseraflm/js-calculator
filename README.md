@@ -5,6 +5,8 @@
 This is my first real project.
 It will be updated in the future with more features.
 
+Github pages link: https://sseraflm.github.io/js-calculator/
+
 ## Features
 
 Currently, it supports basic arithmetic operations and operation history.
@@ -19,10 +21,14 @@ The result is then saved into a variable and added to operation's history by cre
 
 ## Technologies
 
-JavaScript
+- HTML
+
+- CSS
+
+- JavaScript
 
 ## Plans for the future
 
-localStorage for history.
+- localStorage for history.
 
-Button to remove items from history.
+- Better CSS
