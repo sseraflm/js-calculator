@@ -23,6 +23,9 @@ const numberTwo = document.getElementById("numberTwo");
 const operator = document.getElementById("operator");
 const calculateButton = document.getElementById("calculate");
 const history = document.getElementById("history");
+
+const calcHistory = JSON.parse(localStorage.getItem("calcHistory")) || [];
+
 function calculate() {
   if (numberOne.value === "" || numberTwo.value === "") {
     return;
@@ -46,12 +49,31 @@ function calculate() {
     default:
       result = "Invalid operator";
   }
-  const newP = document.createElement("p");
-  newP.innerText = `${a} ${operator.value} ${b} = ${result}`;
-  newP.classList.add("historyPar");
-  history.append(newP);
+
+  const entry = `${a} ${operator.value} ${b} = ${result}`;
+
+  calcHistory.unshift(entry);
+  if (calcHistory.length > 5) {
+    calcHistory.pop();
+  }
+
+  localStorage.setItem("calcHistory", JSON.stringify(calcHistory));
   numberOne.value = "";
   numberTwo.value = "";
+  renderHistory();
+}
+
+function renderHistory() {
+  history.innerText = "";
+
+  calcHistory.forEach((entry) => {
+    const newP = document.createElement("h2");
+    newP.innerText = entry;
+    newP.classList.add("historyPar");
+    history.append(newP);
+  });
 }
 
 calculateButton.addEventListener("click", calculate);
+
+renderHistory();
