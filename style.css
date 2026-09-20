@@ -1,48 +1,60 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    flex-direction: column;
-    background-color: #121358;
-    color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #090c15;
+  color: #e2e8f0;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 0.04em;
+  font-size: 20px;
+  text-shadow: 2px 2px 3px #1e40af;
 }
 
 #inputs {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
 }
 
 .input {
-    text-align: center;
-    border-radius: 10px;
-    background-color: #232f72;
-    color: white;
-    border: none;
-    transition: 0.5s;
-    border: 2px solid transparent;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #14213d;
+  color: #e2e8f0;
+  transition: 0.5s;
+  border: none;
 }
 .input:focus {
-    outline: none;
-    border-color: #2f578a;
+  border: 2px solid #1e40af;
+  outline: none;
 }
 #calculate {
-    border-radius: 10px;
-    background-color: #232f72;
-    color: white;
-    border: none;
-    transition: 0.5s;
+  border-radius: 10px;
+  background-color: #14213d;
+  color: #e2e8f0;
+  border: none;
+  transition: 0.5s;
 }
 #calculate:hover {
-    background-color: #2f578a;
+  border: 2px solid #1e40af;
 }
 #historyP {
-    color: #36ada3;
-    text-align: center;
+  color: #e2e8f0;
+  text-align: center;
 }
 .historyPar {
-    color: #36ada3;
-    text-align: center;
-    font-weight: bold;
+  color: #e2e8f0;
+  text-align: center;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
 }
