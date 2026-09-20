@@ -9,10 +9,9 @@ Github pages link: https://sseraflm.github.io/js-calculator/
 
 <img width="1908" height="1078" alt="calculator" src="https://github.com/user-attachments/assets/22c701ef-a648-404d-8df6-caab6d3d723b" />
 
-
 ## Features
 
-Currently, it supports basic arithmetic operations and operation history.
+Currently, it supports basic arithmetic operations and localstorage operation history.
 
 ## How does it work?
 
@@ -20,7 +19,7 @@ There are five functions in total.
 Four of them perform the basic operations.
 Then the program gets the first number, the second number, and the operator, and saves them into variables.
 The fifth function determines the right operation based on the saved operator.
-The result is then saved into a variable and added to operation's history by creating a new paragraph and appending it to the history div.
+The result is formatted into a string and added to the calculation history array. It is then saved to localStorage so it persists every time the page loads, while the renderHistory function displays it in the history container.
 
 ## Technologies
 
@@ -32,6 +31,4 @@ The result is then saved into a variable and added to operation's history by cre
 
 ## Plans for the future
 
-- localStorage for history.
-
-- Better CSS
+- No ideas currently.
