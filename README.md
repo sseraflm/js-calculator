@@ -7,6 +7,9 @@ It will be updated in the future with more features.
 
 Github pages link: https://sseraflm.github.io/js-calculator/
 
+<img width="1908" height="1078" alt="calculator" src="https://github.com/user-attachments/assets/22c701ef-a648-404d-8df6-caab6d3d723b" />
+
+
 ## Features
 
 Currently, it supports basic arithmetic operations and operation history.
